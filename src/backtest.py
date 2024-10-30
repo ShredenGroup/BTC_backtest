@@ -274,3 +274,7 @@ class BacktestVisualizer:
         
         plt.tight_layout()
         return plt.gcf()
+    
+
+
+        

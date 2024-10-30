@@ -5,7 +5,8 @@ class Config:
     def __init__(self):
       print('config module is loading')
       self.current_dict=pathlib.Path().resolve()
-      self.btc_file=path.join(self.current_dict,'data','bbc.csv')
+      self.btc_file=path.join(self.current_dict,'data','btc.csv')
+      
     @staticmethod
     def arg()->str:
       arguments=sys.argv[1:]

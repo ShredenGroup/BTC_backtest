@@ -10,7 +10,7 @@ class DB_processor():
         if not path_check:
             print('path is not valid')
             sys.exit(1)
-        df=pd.read_csv(path)
+        df=pd.read_csv(path,index_col=0)
         print('Successfully read csv file and return df')
         return df
     
@@ -47,5 +47,11 @@ class DB_processor():
     def export_to_csv(df:pd.DataFrame,path:Path):
         df.to_csv(path,index=False)
         print('Export successfully')
-
+    
+    @staticmethod
+    def add_open_as_index(df:pd.DataFrame,index:str)->pd.DataFrame:
+        df.index=pd.to_datetime(df[index],unit='ms')
+        df.index=df.index.normalize()
+        return df
+    
     

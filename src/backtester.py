@@ -8,7 +8,7 @@ class Backtester:
         
     def get_data_pd(self):
         df_processed = self.df.copy()
-        print(df_processed.head()) 
+        df_processed.index = pd.to_datetime(df_processed.index)
         class CryptoPanda(bt.feeds.PandasData):
             params = (
                 ('datetime', None),
@@ -21,4 +21,5 @@ class Backtester:
             )
             
         data_feed = CryptoPanda(dataname=df_processed)
+        print(data_feed)
         return data_feed

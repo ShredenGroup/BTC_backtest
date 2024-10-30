@@ -17,5 +17,7 @@ def main():
     cerebro.adddata(data)
     datas = cerebro.datas
     print(f"Number of data feeds: {len(datas)}") 
-     
+    cerebro.addstrategy(bt.Strategy)
+    cerebro.run()
+    cerebro.plot(style='bar')
 main()

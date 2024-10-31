@@ -1,7 +1,9 @@
 [依赖下载]
+
 pip install -r requirements.txt
 
 [运行]
+
 python -m python_tester [品种] [策略]
 
 品种目前支持

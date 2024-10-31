@@ -7,10 +7,12 @@ pip install -r requirements.txt
 python -m python_tester [品种] [策略]
 
 品种目前支持
+
 'BTC'
 'China300'
 
 策略
+
 'turtle_100"
 
 你也可以输入'turtle_[突破周期]'来自定义你的海龟策略 如

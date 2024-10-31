@@ -45,7 +45,7 @@ class DB_processor():
 
     @staticmethod
     def export_to_csv(df:pd.DataFrame,path:Path):
-        df.to_csv(path,index=False)
+        df.to_csv(path,index=True)
         print('Export successfully')
     
     @staticmethod

@@ -2,7 +2,6 @@ from .config import Config
 from .db_processor import DB_processor
 import sys
 import pandas as pd 
-from .mockAccount import MockAccount
 from .strategy import TurtleStrategy
 from .backtester import Backtester
 import backtrader as bt

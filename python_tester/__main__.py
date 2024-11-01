@@ -16,7 +16,6 @@ def main():
     DB_processor.export_to_csv(df,'/home/litterpigger/myprojects/BTC_backtest/data/china300.csv')
         
     ''' 
-    print('hello')
     args=Config.arg()
     symbol=args[0]
     if symbol.upper()=='BTC':
